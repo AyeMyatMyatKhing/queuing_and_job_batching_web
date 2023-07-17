@@ -1,14 +1,14 @@
 <template>
   <div>
     <div v-if="batchId">
-      <h6 class="mb-3">Upload is in progress</h6>
+      <h6 class="mb-3">Upload is in progress <span>{{ progress }}%</span></h6>
       <div class="progress">
         <div class="progress-bar progress-bar-striped progress-bar-animated" 
         role="progressbar" 
         aria-valuenow="progress" 
         aria-valuemin="0" 
         aria-valuemax="100" 
-        :style="`width: ${progress}%`">{{ progress }}%</div>
+        :style="`width: ${progress}%`"></div>
       </div>
     </div>
     <div v-else>
