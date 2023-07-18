@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="batchId">
-      <h6 class="mb-3">Upload is in progress <span>{{ progress }}%</span></h6>
+      <h6 class="mb-3">Upload is in progress <span>({{ progress }})%</span></h6>
       <div class="progress">
         <div class="progress-bar progress-bar-striped progress-bar-animated" 
         role="progressbar" 
